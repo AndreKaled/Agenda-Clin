@@ -1,0 +1,28 @@
+POST http://localhost:3333/client
+Content-type: application/json
+
+{
+    "id": "08504232280",
+    "name": "andre",
+    "query": "1° Hab."
+}
+
+###
+
+GET http://localhost:3333/client
+###
+
+GET http://localhost:3333/client?search=08504232280
+###
+
+PUT http://localhost:3333/client/08504232280
+Content-type: application/json
+
+{
+    "name": "andrezinho nerdinho",
+    "query": "1° Hab."
+}
+
+###
+
+DELETE http://localhost:3333/client/08504232280
